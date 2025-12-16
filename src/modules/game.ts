@@ -45,7 +45,6 @@ export default class Game {
                 window.addEventListener("resize", () => {
                     this.handleResize()
                 })
-                // this.PIECES = initializePieces(this.SIZE, this.video)
                 this.startButton.addEventListener("click", () => {
                     let grid = setDifficulty();
                     this.SIZE.rows = grid.rowNumber;
@@ -83,7 +82,7 @@ export default class Game {
         let now = new Date().getTime();
         this.END_TIME = now;
         setTimeout(playMelody, 500);
-        setTimeout(this.menuItemsElement.style.display = "block", 1000);
+        // setTimeout(this.menuItemsElement.style.display = "block", 1500);
     }
 
     handleResize() {

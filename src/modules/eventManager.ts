@@ -8,11 +8,10 @@ export function addEventListeners(game: Game) {
     let HELPER_CONTEXT = game.helperContext
     let PIECES = game.PIECES
     let END_TIME = game.END_TIME
-
     
     CANVAS.addEventListener("mousedown", onMouseDown);
-    CANVAS.addEventListener("touchstart", onTouchStart);    
-    CANVAS.addEventListener("mousemove", onMouseMove);    
+    CANVAS.addEventListener("touchstart", onTouchStart);
+    CANVAS.addEventListener("mousemove", onMouseMove);
     CANVAS.addEventListener("touchmove", onTouchMove);
     CANVAS.addEventListener("mouseup", onMouseUp);
     CANVAS.addEventListener("touchend", onMouseUp);
