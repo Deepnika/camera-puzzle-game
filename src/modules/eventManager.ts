@@ -68,6 +68,7 @@ export function addEventListeners(game: Game) {
             SELECTED_PIECE.snap();
             if (isComplete(PIECES) && END_TIME == null) {
                 game.end();
+                setTimeout(() => location.reload(), 5000);
             }
         }
         SELECTED_PIECE = null;

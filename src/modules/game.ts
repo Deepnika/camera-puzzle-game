@@ -82,7 +82,8 @@ export default class Game {
         let now = new Date().getTime();
         this.END_TIME = now;
         setTimeout(playMelody, 500);
-        // setTimeout(this.menuItemsElement.style.display = "block", 1500);
+        // const game = new Game();
+        // game.start();
     }
 
     handleResize() {
