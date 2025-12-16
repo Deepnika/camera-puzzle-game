@@ -5,8 +5,8 @@ export function setDifficulty() {
     let columns = 0
     switch (diff) {
         case "easy":
-            rows = 2;
-            columns = 2;
+            rows = 3;
+            columns = 3;
             break;
         case "normal":
             rows = 5;
